@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    height: 50%;
+    width: calc(100vw - 220px);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,.4) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+
+.image-name{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    .image {
+        height: 200px;
+        fill: white;
+    }
+    .name {
+        color: white;
+        font-family: 'Arial';
+        h1 {
+            font-size: 90px;
+        }
+        p {
+            color: rgb(30,215,96);
+        }
+    }
+}
+
+.logout {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    a {
+        text-decoration: none;
+        color: white;
+        border-style: solid;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-left: 1%;
+        font-family: 'Arial';
+        font-weight: bold;
+    }
+}
+
+.info{
+    display: flex;
+    h3 {
+        margin: 0px 5px;
+    }
+}
+
+.bottomHalf {
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    width: calc(100vw - 220px);
+    min-height: 50%;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    h2 {
+        margin: 2%;
+        font-family: 'Arial';
+        color: white;
+    }
+    .playlists {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2%;
+
+        .playlistCover {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,.4) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+            background-blend-mode: multiply,multiply;
+            height: 250px;
+            width: 175px;
+            border-radius: 7.5px;
+            margin: 2%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 140px;
+                height: 140px;
+                margin-top: 10%;
+            }
+            h4 {
+                color: white;
+                margin-top: 5%;
+            }
+            p:nth-of-type(1) {
+                color: lightgrey;
+                font-size: 12px;
+            }
+            p:nth-of-type(2) {
+                color: lightgrey;
+                font-size: 12px;
+                margin-top: 12.5%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 740px) {
+    .profile, .bottomHalf {
+        left: 0;
+        width: 100vw;
+    }
+}

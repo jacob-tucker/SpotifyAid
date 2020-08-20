@@ -1,0 +1,201 @@
+.specificTrack {
+  width: calc(100vw - 270px);
+  left: 220px;
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+}
+
+.specificTrack img {
+  width: 250px;
+  height: 250px;
+}
+
+.specificTrack .specificTrackInfo {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.specificTrack .specificTrackInfo h4 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 2%;
+}
+
+.specificTrack .specificTrackInfo h5 {
+  color: darkgrey;
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.specificTrack .specificTrackInfo h6 {
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 10%;
+}
+
+.specificTrack .specificTrackInfo a {
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: #1ed760;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.analysisChart {
+  width: calc(100vw - 300px);
+  left: 300px;
+  position: relative;
+}
+
+.analysisChart .cluster {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.analysisChart .cluster p {
+  position: relative;
+  top: 30%;
+  color: white;
+  -webkit-transform: rotateZ(-20deg);
+          transform: rotateZ(-20deg);
+}
+
+.analysisChart .cluster .chartElement1 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #e74e4e;
+  border-left: none;
+  background: rgba(231, 78, 78, 0.4);
+}
+
+.analysisChart .cluster .chartElement2 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #db468c;
+  border-left: none;
+  background: rgba(219, 70, 140, 0.4);
+}
+
+.analysisChart .cluster .chartElement3 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #c44fdb;
+  border-left: none;
+  background: rgba(196, 79, 219, 0.4);
+}
+
+.analysisChart .cluster .chartElement4 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #6d4fdb;
+  border-left: none;
+  background: rgba(109, 79, 219, 0.4);
+}
+
+.analysisChart .cluster .chartElement5 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #4a4fe0;
+  border-left: none;
+  background: rgba(74, 79, 224, 0.4);
+}
+
+.analysisChart .cluster .chartElement6 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #4fb6db;
+  border-left: none;
+  background: rgba(79, 182, 219, 0.4);
+}
+
+.analysisChart .cluster .chartElement7 {
+  position: absolute;
+  height: 50px;
+  left: 150px;
+  border: solid #4fdb87;
+  border-left: none;
+  background: rgba(79, 219, 135, 0.4);
+}
+
+@media all and (max-width: 1350px) {
+  .analysisChart {
+    left: 250px;
+  }
+}
+
+@media all and (max-width: 1275px) {
+  .analysisChart {
+    left: 200px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media all and (max-width: 1175px) {
+  .analysisChart {
+    left: 175px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media all and (max-width: 1075px) {
+  .analysisChart {
+    left: 150px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media all and (max-width: 975px) {
+  .analysisChart {
+    left: 125px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@media all and (max-width: 850px) {
+  .analysisChart {
+    left: 125px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@media all and (max-width: 740px) {
+  .specificTrack {
+    margin: 15px;
+    left: 0;
+    width: calc(100vw - 15px);
+  }
+  .specificTrack img {
+    width: 200px;
+    height: 200px;
+  }
+  .specificTrack .specificTrackInfo {
+    width: 50%;
+  }
+  .analysisChart {
+    left: 0px;
+    margin-left: 0px;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+/*# sourceMappingURL=trackInfoSpecific.css.map */

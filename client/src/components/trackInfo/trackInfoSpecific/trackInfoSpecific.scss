@@ -1,0 +1,182 @@
+.specificTrack {
+    width: calc(100vw - 270px);
+    left: 220px;
+    position: relative;
+    top: 0;
+    display: flex;
+    margin: 50px;
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .specificTrackInfo {
+        margin-left: 20px;
+        width: 40%;
+        
+        h4 {
+            color: white;
+            font-size: 35px;
+            margin-bottom: 2%;
+        }
+        h5 {
+            color: darkgrey;
+            font-size: 25px;
+            margin-bottom: 2%;
+        }
+        h6 {
+            color: grey;
+            font-size: 15px;
+            margin-bottom: 10%;
+        }
+
+        a {
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            background: rgb(30,215,96);
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+}
+
+.analysisChart {
+    width: calc(100vw - 300px);
+    left: 300px;
+    position: relative;
+
+    .cluster {
+        height: 50px;
+        display: flex;
+        margin: 10px; 
+        p {
+            position: relative;
+            top: 30%;
+            color: white;
+            transform: rotateZ(-20deg);
+        }
+        .chartElement1 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(231, 78, 78);
+            border-left: none;
+            background: rgba(231, 78, 78, .4);
+        }
+        .chartElement2 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(219, 70, 140);
+            border-left: none;
+            background: rgba(219, 70, 140, .4);
+        }
+        .chartElement3 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(196, 79, 219);
+            border-left: none;
+            background: rgba(196, 79, 219, .4);
+        }
+        .chartElement4 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(109, 79, 219);
+            border-left: none;
+            background: rgba(109, 79, 219, .4);
+        }
+        .chartElement5 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(74, 79, 224);
+            border-left: none;
+            background: rgba(74, 79, 224, .4);
+        }
+        .chartElement6 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(79, 182, 219);
+            border-left: none;
+            background: rgba(79, 182, 219, .4);
+        }
+        .chartElement7 {
+            position: absolute;
+            height: 50px;
+            left: 150px;
+            border: solid rgb(79, 219, 135);
+            border-left: none;
+            background: rgba(79, 219, 135, .4);
+        }
+    }
+
+}
+
+@media all and (max-width: 1350px) {
+    .analysisChart {
+        left: 250px;
+    }
+}
+
+@media all and (max-width: 1275px) {
+    .analysisChart {
+        left: 200px;
+        transform: scale(.9);
+    }
+}
+
+@media all and (max-width: 1175px) {
+    .analysisChart {
+        left: 175px;
+        transform: scale(.8);
+    }
+}
+
+@media all and (max-width: 1075px) {
+    .analysisChart {
+        left: 150px;
+        transform: scale(.7);
+    }
+}
+
+@media all and (max-width: 975px) {
+    .analysisChart {
+        left: 125px;
+        transform: scale(.6);
+    }
+}
+
+@media all and (max-width: 850px) {
+    .analysisChart {
+        left: 125px;
+        transform: scale(.5);
+    }
+}
+
+@media all and (max-width: 740px) {
+    .specificTrack {
+        margin: 15px;
+        left: 0;
+        width: calc(100vw - 15px);
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .specificTrackInfo {
+            width: 50%;
+        }
+    }
+    .analysisChart {
+        left: 0px;
+        margin-left: 0px;
+        transform: scale(.4);
+    }
+}

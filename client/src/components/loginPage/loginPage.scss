@@ -1,0 +1,22 @@
+.loginPage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: white;
+        margin-bottom: 1%;
+    }
+
+    a {
+        outline: 0;
+        text-decoration: none;
+        color: white;
+        border: solid rgb(30,215,96);
+        padding: 10px;
+    }
+}

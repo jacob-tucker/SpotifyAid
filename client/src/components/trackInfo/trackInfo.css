@@ -1,0 +1,138 @@
+.mainTrackPage {
+  width: calc(100vw - 220px);
+  height: 100%;
+  left: 220px;
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+.mainTrackPage img {
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  -webkit-animation: spinWeeeee 2s;
+          animation: spinWeeeee 2s;
+}
+
+.mainTrackPage input {
+  position: absolute;
+  border: 0;
+  outline: 0;
+  background: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #1ed760;
+  -webkit-animation: alongWithWeeeee 4s forwards;
+          animation: alongWithWeeeee 4s forwards;
+}
+
+.mainTrackPage input::-webkit-input-placeholder {
+  color: #1ed760;
+}
+
+.mainTrackPage input:-ms-input-placeholder {
+  color: #1ed760;
+}
+
+.mainTrackPage input::-ms-input-placeholder {
+  color: #1ed760;
+}
+
+.mainTrackPage input::placeholder {
+  color: #1ed760;
+}
+
+@-webkit-keyframes spinWeeeee {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0.5) rotate(-360deg);
+            transform: scale(0.5) rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(-360deg);
+            transform: scale(1) rotate(-360deg);
+  }
+}
+
+@keyframes spinWeeeee {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0.5) rotate(-360deg);
+            transform: scale(0.5) rotate(-360deg);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(-360deg);
+            transform: scale(1) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes alongWithWeeeee {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@keyframes alongWithWeeeee {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@media all and (max-width: 740px) {
+  .mainTrackPage {
+    left: 0;
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=trackInfo.css.map */

@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.navbar .title img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar .title h2 {
+  color: white;
+}
+
+.navbar .topStuff, .navbar .trackInfo {
+  margin-top: 5%;
+}
+
+.navbar .profileTab {
+  margin-top: 50%;
+}
+
+.navbar .topStuff, .navbar .profileTab, .navbar .trackInfo {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  border-radius: 10px;
+  display: flex;
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .topStuff:hover h2, .navbar .profileTab:hover h2, .navbar .trackInfo:hover h2 {
+  color: white;
+}
+
+.navbar .topStuff img, .navbar .profileTab img, .navbar .trackInfo img {
+  width: 40px;
+  height: 40px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.navbar .active {
+  background: grey;
+  color: white;
+}
+
+@media all and (max-width: 740px) {
+  .navbar {
+    position: fixed;
+    top: 90%;
+    height: 10%;
+    width: 100vw;
+    left: 0;
+    z-index: 2;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .title img {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar .title h2 {
+    display: none;
+  }
+  .navbar .topStuff, .navbar .profileTab, .navbar .trackInfo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0%;
+    margin-left: 5%;
+    width: auto;
+  }
+  .navbar .active {
+    background: none;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

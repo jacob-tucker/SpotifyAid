@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  height: 50%;
+  width: calc(100vw - 220px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.4))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+}
+
+.image-name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-name .image {
+  height: 200px;
+  fill: white;
+}
+
+.image-name .name {
+  color: white;
+  font-family: 'Arial';
+}
+
+.image-name .name h1 {
+  font-size: 90px;
+}
+
+.image-name .name p {
+  color: #1ed760;
+}
+
+.logout {
+  position: relative;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4%;
+}
+
+.logout a {
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 1%;
+  font-family: 'Arial';
+  font-weight: bold;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info h3 {
+  margin: 0px 5px;
+}
+
+.bottomHalf {
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  width: calc(100vw - 220px);
+  min-height: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#323232), color-stop(40%, #3F3F3F), color-stop(150%, #1C1C1C)), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), color-stop(200%, rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+}
+
+.bottomHalf h2 {
+  margin: 2%;
+  font-family: 'Arial';
+  color: white;
+}
+
+.bottomHalf .playlists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+}
+
+.bottomHalf .playlists .playlistCover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.4))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  height: 250px;
+  width: 175px;
+  border-radius: 7.5px;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottomHalf .playlists .playlistCover img {
+  width: 140px;
+  height: 140px;
+  margin-top: 10%;
+}
+
+.bottomHalf .playlists .playlistCover h4 {
+  color: white;
+  margin-top: 5%;
+}
+
+.bottomHalf .playlists .playlistCover p:nth-of-type(1) {
+  color: lightgrey;
+  font-size: 12px;
+}
+
+.bottomHalf .playlists .playlistCover p:nth-of-type(2) {
+  color: lightgrey;
+  font-size: 12px;
+  margin-top: 12.5%;
+}
+
+@media all and (max-width: 740px) {
+  .profile, .bottomHalf {
+    left: 0;
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

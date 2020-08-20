@@ -1,0 +1,219 @@
+.topSelector {
+  width: calc(100vw - 220px);
+  height: 10vh;
+  left: 220px;
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topSelector .topArtistsSelector, .topSelector .topTracksSelector {
+  margin-top: 2%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topSelector .topArtistsSelector button, .topSelector .topTracksSelector button {
+  color: white;
+  background: none;
+  outline: 0;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  width: 75%;
+}
+
+@media all and (max-width: 740px) {
+  .topSelector {
+    left: 0;
+    width: 100vw;
+  }
+  .topSelector button {
+    font-size: 25px;
+  }
+}
+
+.topThings {
+  position: relative;
+  width: calc(100vw - 220px);
+  left: 220px;
+  top: 10vh;
+}
+
+.topThings .topArtists {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.topThings .topArtists .artistSlot {
+  position: relative;
+  margin: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: green;
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  outline: 0;
+  text-decoration: none;
+}
+
+.topThings .topArtists .artistSlot .imageArtist .img1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+}
+
+.topThings .topArtists .artistSlot .imageArtist .picPlacement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+}
+
+.topThings .topArtists .artistSlot .imageArtist .picPlacement:hover {
+  -webkit-animation: blowupArtist 1s forwards;
+          animation: blowupArtist 1s forwards;
+}
+
+.topThings .topArtists .artistSlot .imageArtist .picPlacement .img2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.topThings .topArtists .artistSlot p {
+  margin-top: 5%;
+  color: white;
+}
+
+.topThings .topTracks {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5%;
+}
+
+.topThings .topTracks .trackDetails {
+  height: 50px;
+  position: relative;
+  width: 95%;
+  margin-bottom: 2%;
+}
+
+.topThings .topTracks .trackDetails .thePlayerButton img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+.topThings .topTracks .trackDetails img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.topThings .topTracks .trackDetails .nameOfSong {
+  margin-top: 6px;
+  left: 75px;
+  color: white;
+  font-family: 'Arial';
+  position: relative;
+  font-size: 17px;
+}
+
+.topThings .topTracks .trackDetails .timeOfSong {
+  margin-top: 6px;
+  margin-right: 2%;
+  top: 0%;
+  float: right;
+  position: relative;
+  color: gray;
+  font-size: 17px;
+}
+
+.topThings .topTracks .trackDetails .artistsForTrack {
+  left: 75px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topThings .topTracks .trackDetails .artistsForTrack p {
+  color: grey;
+  margin-right: 2%;
+}
+
+.topThings .topTracks .trackDetails:hover, .topThings .topTracks .trackDetails:focus {
+  outline: 0;
+  background-color: rgba(220, 220, 220, 0.2);
+}
+
+.topThings .topTracks .trackDetails:hover img, .topThings .topTracks .trackDetails:focus img {
+  display: block;
+}
+
+@media all and (max-width: 740px) {
+  .topThings {
+    left: 0;
+    width: 100vw;
+  }
+}
+
+@-webkit-keyframes blowupArtist {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blowupArtist {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=topStuff.css.map */

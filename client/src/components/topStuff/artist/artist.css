@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.diver {
+  position: absolute;
+  width: calc(100vw - 220px);
+  left: 220px;
+  top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.diver img {
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+}
+
+.diver .artistCombinedPhotos {
+  position: relative;
+}
+
+.diver .spotifySender {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.diver .spotifySender:hover {
+  -webkit-animation: goSpotifyArtist 1s forwards;
+          animation: goSpotifyArtist 1s forwards;
+}
+
+.diver .artistInfo {
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  height: 400px;
+}
+
+.diver .artistInfo p {
+  color: #1ed760;
+}
+
+.diver .artistInfo h1 {
+  color: white;
+}
+
+.diver .allInfo {
+  width: calc(100vw - 220px);
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.diver .allInfo #artistFollowers {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diver .allInfo #artistFollowers h4 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
+.diver .allInfo #artistFollowers p {
+  color: #1ed760;
+}
+
+.diver .allInfo #artistPopularity {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diver .allInfo #artistPopularity h4 {
+  color: white;
+  font-size: 30px;
+}
+
+.diver .allInfo #artistPopularity p {
+  color: #1ed760;
+}
+
+.diver .allInfo #artistGenres {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diver .allInfo #artistGenres h4 {
+  color: white;
+  font-size: 30px;
+}
+
+.diver .allInfo #artistGenres p {
+  color: #1ed760;
+}
+
+@media all and (max-width: 1054.5px) {
+  .diver .artistInfo {
+    width: 400px;
+    height: 200px;
+    margin-left: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .diver {
+    width: 100%;
+    left: 0;
+  }
+  .diver .allInfo #artistGenres {
+    margin-bottom: 200px;
+  }
+}
+
+@-webkit-keyframes goSpotifyArtist {
+  100% {
+    opacity: .75;
+  }
+}
+
+@keyframes goSpotifyArtist {
+  100% {
+    opacity: .75;
+  }
+}
+/*# sourceMappingURL=artist.css.map */

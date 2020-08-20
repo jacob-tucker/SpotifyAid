@@ -1,0 +1,77 @@
+.mainTrackPage {
+    width: calc(100vw - 220px);
+    height: 100%;
+    left: 220px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+    img {
+        border-radius: 100%;
+        width: 400px;
+        height: 400px;
+        animation: spinWeeeee 2s;
+    }
+
+    input {
+        position: absolute;
+        border: 0;
+        outline: 0;
+        background: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+
+        color: rgb(30,215,96);
+        
+        animation: alongWithWeeeee 4s forwards;
+    }
+
+    input::placeholder {
+        color: rgb(30,215,96);
+    }
+}
+
+@keyframes spinWeeeee {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(.5) rotate(-360deg);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1) rotate(-360deg);
+        
+    }
+}
+
+@keyframes alongWithWeeeee {
+    // This one specifies the start position
+    0% {
+        transform: scale(0);
+    }
+    // This one is a start point for when to start going --> scale(1)
+    // Similar things, but very cool differences!!
+    25% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+@media all and (max-width: 740px) {
+    .mainTrackPage {
+        left: 0;
+        width: 100vw;
+    }
+}
