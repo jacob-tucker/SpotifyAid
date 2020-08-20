@@ -104,3 +104,5 @@ export const getTrackFromSearch = (track) => {
     console.log(`https://api.spotify.com/v1/search?q=${track}&type=track`)
     return axios.get(`https://api.spotify.com/v1/search?q=${track}&type=track`, { headers })
 }
+
+export const getRecentTracks = () => axios.get('https://api.spotify.com/v1/me/player/recently-played', { headers })

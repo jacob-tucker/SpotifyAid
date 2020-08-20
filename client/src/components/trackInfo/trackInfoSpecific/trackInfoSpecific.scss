@@ -118,44 +118,51 @@
 
 }
 
-@media all and (max-width: 1350px) {
+@media all and (max-width: 1415px) {
     .analysisChart {
         left: 250px;
     }
 }
 
-@media all and (max-width: 1275px) {
+@media all and (max-width: 1350px) {
     .analysisChart {
         left: 200px;
         transform: scale(.9);
     }
 }
 
-@media all and (max-width: 1175px) {
+@media all and (max-width: 1250px) {
     .analysisChart {
         left: 175px;
         transform: scale(.8);
     }
 }
 
-@media all and (max-width: 1075px) {
+@media all and (max-width: 1150px) {
     .analysisChart {
         left: 150px;
         transform: scale(.7);
     }
 }
 
-@media all and (max-width: 975px) {
+@media all and (max-width: 1050px) {
     .analysisChart {
         left: 125px;
         transform: scale(.6);
     }
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 915px) {
     .analysisChart {
         left: 125px;
         transform: scale(.5);
+    }
+}
+
+@media all and (max-width: 875px) {
+    .analysisChart {
+        left: 110px;
+        transform: scale(.4);
     }
 }
 
@@ -178,5 +185,13 @@
         left: 0px;
         margin-left: 0px;
         transform: scale(.4);
+        width: 20%;
+
+        .cluster {
+            p {
+                font-size: 20px;
+            }
+        }
     }
+    
 }

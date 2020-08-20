@@ -33,7 +33,7 @@
   color: white;
 }
 
-.navbar .topStuff, .navbar .trackInfo {
+.navbar .topStuff, .navbar .trackInfo, .navbar .recents {
   margin-top: 5%;
 }
 
@@ -41,7 +41,7 @@
   margin-top: 50%;
 }
 
-.navbar .topStuff, .navbar .profileTab, .navbar .trackInfo {
+.navbar .topStuff, .navbar .profileTab, .navbar .trackInfo, .navbar .recents {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,11 +57,11 @@
           align-items: center;
 }
 
-.navbar .topStuff:hover h2, .navbar .profileTab:hover h2, .navbar .trackInfo:hover h2 {
+.navbar .topStuff:hover h2, .navbar .profileTab:hover h2, .navbar .trackInfo:hover h2, .navbar .recents:hover h2 {
   color: white;
 }
 
-.navbar .topStuff img, .navbar .profileTab img, .navbar .trackInfo img {
+.navbar .topStuff img, .navbar .profileTab img, .navbar .trackInfo img, .navbar .recents img {
   width: 40px;
   height: 40px;
   -webkit-filter: brightness(0) invert(1);
@@ -93,13 +93,16 @@
   .navbar .title h2 {
     display: none;
   }
-  .navbar .topStuff, .navbar .profileTab, .navbar .trackInfo {
+  .navbar .topStuff, .navbar .profileTab, .navbar .trackInfo, .navbar .recents {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-top: 0%;
-    margin-left: 5%;
+    margin-left: 10%;
     width: auto;
+  }
+  .navbar .topStuff h2, .navbar .profileTab h2, .navbar .trackInfo h2, .navbar .recents h2 {
+    display: none;
   }
   .navbar .active {
     background: none;

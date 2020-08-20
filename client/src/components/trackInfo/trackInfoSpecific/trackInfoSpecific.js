@@ -27,7 +27,7 @@ const TrackInfoSpecific = ({ location }) => {
         <div>
             {trackInfo && analysis
                 ?
-                <div>
+                <div className="wholeTrackPage">
                     <div className="specificTrack">
                         <img src={trackInfo.album.images[0].url} />
                         <div className="specificTrackInfo">
@@ -39,7 +39,7 @@ const TrackInfoSpecific = ({ location }) => {
                     </div>
                     <div className="analysisChart">
                         <div className="cluster">
-                            <p>Acoustiness</p>
+                            <p>Acousticness</p>
                             <div className="chartElement1" style={{ width: analysis.acousticness * 1000 }}></div>
                         </div>
                         <div className="cluster">
@@ -51,7 +51,7 @@ const TrackInfoSpecific = ({ location }) => {
                             <div className="chartElement3" style={{ width: analysis.energy * 1000 }}></div>
                         </div>
                         <div className="cluster">
-                            <p>Instrumentall</p>
+                            <p>Instrumental</p>
                             <div className="chartElement4" style={{ width: analysis.instrumentalness * 1000 }}></div>
                         </div>
                         <div className="cluster">

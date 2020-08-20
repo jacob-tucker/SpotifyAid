@@ -8,6 +8,7 @@ import TopStuff from './components/topStuff/topStuff'
 import Artist from './components/topStuff/artist/artist'
 import TrackInfo from './components/trackInfo/trackInfo'
 import TrackInfoSpecific from './components/trackInfo/trackInfoSpecific/trackInfoSpecific';
+import Recents from './components/recents/recents'
 import { token } from './spotifyToken/spotify';
 import { Router, Route, Switch } from 'react-router-dom'
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/topStuff/:id' component={Artist} />
             <Route exact path='/trackInfo' component={TrackInfo} />
             <Route path='/trackInfo/:track' component={TrackInfoSpecific} />
+            <Route path='/recents' component={Recents} />
           </Switch>
         </div>
       </Router>

@@ -23,7 +23,7 @@
         }
     }
 
-    .topStuff, .trackInfo {
+    .topStuff, .trackInfo, .recents {
         margin-top: 5%;;
     }
 
@@ -31,7 +31,7 @@
         margin-top: 50%;
     }
 
-    .topStuff, .profileTab, .trackInfo {
+    .topStuff, .profileTab, .trackInfo, .recents {
         width: 80%;
         display: flex;
         
@@ -54,6 +54,7 @@
             height: 40px;
             filter: brightness(0) invert(1);
         }
+    
     }
     .active {
         background: grey;
@@ -81,11 +82,14 @@
             }
         }
 
-        .topStuff, .profileTab, .trackInfo {
+        .topStuff, .profileTab, .trackInfo, .recents {
             align-items: center;
             margin-top: 0%;
-            margin-left: 5%;
+            margin-left: 10%;
             width: auto;
+            h2 {
+                display: none;
+            }
             
         }
         .active {

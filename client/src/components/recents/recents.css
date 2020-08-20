@@ -1,0 +1,91 @@
+.mainRecents {
+  width: calc(100vw - 220px);
+  left: 220px;
+  position: relative;
+}
+
+.mainRecents h2 {
+  top: 50px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.mainRecents .topTracks {
+  top: 110px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5%;
+}
+
+.mainRecents .topTracks .trackDetails {
+  height: 50px;
+  position: relative;
+  width: 95%;
+  margin-bottom: 2%;
+}
+
+.mainRecents .topTracks .trackDetails .thePlayerButton img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+.mainRecents .topTracks .trackDetails img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.mainRecents .topTracks .trackDetails .nameOfSong {
+  margin-top: 6px;
+  left: 75px;
+  color: white;
+  font-family: 'Arial';
+  position: relative;
+  font-size: 17px;
+}
+
+.mainRecents .topTracks .trackDetails .timeOfSong {
+  margin-top: 6px;
+  margin-right: 2%;
+  top: 0%;
+  float: right;
+  position: relative;
+  color: gray;
+  font-size: 17px;
+}
+
+.mainRecents .topTracks .trackDetails .artistsForTrack {
+  left: 75px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainRecents .topTracks .trackDetails .artistsForTrack p {
+  color: grey;
+  margin-right: 2%;
+}
+
+.mainRecents .topTracks .trackDetails:hover, .mainRecents .topTracks .trackDetails:focus {
+  outline: 0;
+  background-color: rgba(220, 220, 220, 0.2);
+}
+
+.mainRecents .topTracks .trackDetails:hover img, .mainRecents .topTracks .trackDetails:focus img {
+  display: block;
+}
+/*# sourceMappingURL=recents.css.map */
