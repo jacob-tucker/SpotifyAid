@@ -1,6 +1,6 @@
 # SpotifyAid
 SpotifyAid is a web application that allows users to see all of their personal spotify statistics, whether it be their top tracks, artists, most recent songs,
-and more.
+and more. The website can be found here: https://spotifyaid.netlify.app
 
 ## Components
 The client side is hosted on Netlify and is build using React.js and Sass. Each user logs in and is given a spotify access token so that the client
