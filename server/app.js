@@ -11,12 +11,13 @@ var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var cors = require('cors');
 const path = require('path');
+const port = process.env.PORT || 8888;
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
 var client_id = '46aca55fde6042729e7ca9f5430104c1'; // Your client id
 var client_secret = 'b97e9c050889440c8116778fa5917b53'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = 'https://spotifyaid.herokuapp.com/callback/'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -116,13 +117,13 @@ app.get('/callback', function (req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('http://localhost:3000/#' +
+        res.redirect('https://spotifyaid.netlify.app/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
           }));
       } else {
-        res.redirect('http://localhost:3000/#' +
+        res.redirect('https://spotifyaid.netlify.app/#' +
           querystring.stringify({
             error: 'invalid_token'
           }));
@@ -156,8 +157,10 @@ app.get('/refresh_token', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.redirect('http://localhost:3000/')
+  res.redirect('https://spotifyaid.netlify.app/')
 })
 
-console.log('Listening on 8888');
-app.listen(8888);
+console.log('Listening on Heroku');
+app.listen(port, () => {
+  console.log("Server is up!");
+});

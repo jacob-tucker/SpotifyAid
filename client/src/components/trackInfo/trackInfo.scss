@@ -23,7 +23,7 @@
         background: none;
         text-align: center;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 30px;
 
         color: rgb(30,215,96);
         
@@ -65,10 +65,10 @@
         transform: scale(1);
     }
     75% {
-        transform: translateY(-200px);
+        transform: translateY(-175px);
     }
     100% {
-        transform: translateY(-200px);
+        transform: translateY(-175px);
     }
 }
 

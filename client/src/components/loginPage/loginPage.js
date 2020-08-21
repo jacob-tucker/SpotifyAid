@@ -6,7 +6,7 @@ const loginPage = () => (
 
     <div className="loginPage">
         <h1>Login to SpotifyAid</h1>
-        <a href='http://localhost:8888/login'>Log in with Spotify</a>
+        <a href=' https://spotifyaid.herokuapp.com/login'>Log in with Spotify</a>
     </div>
 
 )

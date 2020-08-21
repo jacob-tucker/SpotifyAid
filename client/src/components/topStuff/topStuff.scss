@@ -173,6 +173,12 @@
     .topThings {
         left: 0;
         width: 100vw;
+
+        .topArtists {
+            .artistSlot {
+                margin-bottom: 8%;
+            }
+        }
     }
 }
 

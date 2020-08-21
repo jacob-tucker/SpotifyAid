@@ -47,7 +47,7 @@ const Profile = () => {
                         <h3 style={{ color: 'rgb(30,215,96)' }}>{playlists.length}</h3><h3 style={{ color: 'white' }}> Playlists</h3>
                         <h3 style={{ color: 'rgb(30,215,96)' }}>{following.length}</h3><h3 style={{ color: 'white' }}> Following</h3>
                     </div>
-                    <a href='http://localhost:8888/' onClick={logout}>LOGOUT</a>
+                    <a href='https://spotifyaid.herokuapp.com/' onClick={logout}>LOGOUT</a>
                 </div>
             </div>
 

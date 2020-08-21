@@ -203,6 +203,9 @@
     left: 0;
     width: 100vw;
   }
+  .topThings .topArtists .artistSlot {
+    margin-bottom: 8%;
+  }
 }
 
 @-webkit-keyframes blowupArtist {

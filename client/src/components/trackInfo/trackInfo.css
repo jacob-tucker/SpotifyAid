@@ -31,7 +31,7 @@
   background: none;
   text-align: center;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
   color: #1ed760;
   -webkit-animation: alongWithWeeeee 4s forwards;
           animation: alongWithWeeeee 4s forwards;
@@ -105,12 +105,12 @@
             transform: scale(1);
   }
   75% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-175px);
+            transform: translateY(-175px);
   }
   100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-175px);
+            transform: translateY(-175px);
   }
 }
 
@@ -128,12 +128,12 @@
             transform: scale(1);
   }
   75% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-175px);
+            transform: translateY(-175px);
   }
   100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-175px);
+            transform: translateY(-175px);
   }
 }
 

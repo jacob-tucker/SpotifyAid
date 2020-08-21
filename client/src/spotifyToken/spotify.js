@@ -27,7 +27,7 @@ const getLocalRefreshToken = () => window.localStorage.getItem('refresh_token');
 // Refresh the token
 const refreshAccessToken = async () => {
     try {
-        const { data } = await axios.get(`http://localhost:8888/refresh_token?refresh_token=${getLocalRefreshToken()}`);
+        const { data } = await axios.get(`https://spotifyaid.herokuapp.com/refresh_token?refresh_token=${getLocalRefreshToken()}`);
         const { access_token } = data;
         setLocalAccessToken(access_token);
         window.location.reload();

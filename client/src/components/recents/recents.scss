@@ -79,3 +79,10 @@
     }
 }
 
+@media all and (max-width: 740px) {
+    .mainRecents {
+        left: 0;
+        width: 100vw;
+    }
+}
+

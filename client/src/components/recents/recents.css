@@ -88,4 +88,11 @@
 .mainRecents .topTracks .trackDetails:hover img, .mainRecents .topTracks .trackDetails:focus img {
   display: block;
 }
+
+@media all and (max-width: 740px) {
+  .mainRecents {
+    left: 0;
+    width: 100vw;
+  }
+}
 /*# sourceMappingURL=recents.css.map */
