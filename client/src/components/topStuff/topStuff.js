@@ -61,9 +61,9 @@ const TopStuff = () => {
                                 }
                             }} >
                                 <div className="imageArtist">
-                                    <img className="img1" src={thing.images[0].url} />
+                                    <img alt="artistcover" className="img1" src={thing.images[0].url} />
                                     <div className="picPlacement">
-                                        <img className="img2" src={require('./spotifybutton.png')} />
+                                        <img alt="spotifyplay" className="img2" src={require('./spotifybutton.png')} />
                                     </div>
                                 </div>
                                 <p>{thing.name}</p>
@@ -76,8 +76,8 @@ const TopStuff = () => {
                         <div className="topTracks">
                             {topTracks.data.items.map((thing, i) => (
                                 <div tabIndex="1" className="trackDetails" key={i}>
-                                    <a href={thing.preview_url} className="thePlayerButton"><img src={require("./whiteplay.jpg")} /></a>
-                                    <img src={thing.album.images[0].url} />
+                                    <a href={thing.preview_url} className="thePlayerButton"><img alt="spotifyplay" src={require("./whiteplay.jpg")} /></a>
+                                    <img alt="albumcover" src={thing.album.images[0].url} />
                                     <p className="timeOfSong">{(thing.duration_ms / 60000).toFixed(2)}</p>
                                     <p className="nameOfSong">{thing.name}</p>
                                     <div className="artistsForTrack">{thing.artists.map((thing, i) => (

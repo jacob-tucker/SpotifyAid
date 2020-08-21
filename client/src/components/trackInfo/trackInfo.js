@@ -19,9 +19,9 @@ const TrackInfo = () => {
                     track: trackQuery
                 }
             }}>
-                <img src={require('../navbar/spotifyimage.png')} />
+                <img alt="spotify" src={require('../navbar/spotifyimage.png')} />
             </Link>
-            <input type="text" placeholder='Search...' value={track} onChange={(e) => setTrack(e.target.value)} />
+            <input type="text" placeholder='Search for a track...' value={track} onChange={(e) => setTrack(e.target.value)} />
         </div>
     )
 }

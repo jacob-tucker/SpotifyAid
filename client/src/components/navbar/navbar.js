@@ -67,20 +67,20 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="title">
-                <img width='20px' height='20px' src={require('./spotifyimage.png')} />
+                <img alt="spotifylogo" width='20px' height='20px' src={require('./spotifyimage.png')} />
                 <h2>SpotifyAid</h2>
             </div>
             <Link ref={profileLink} className="profileTab" to="/" onClick={() => focusProfile()}>
-                <img src={require('./profileicon.png')} /><h2>Profile</h2>
+                <img alt="profileicon" src={require('./profileicon.png')} /><h2>Profile</h2>
             </Link>
             <Link ref={topStatsLink} className="topStuff" to="/topStuff" onClick={() => focusTopStats()}>
-                <img src={require('./statsicon.png')} /><h2>Top Stats</h2>
+                <img alt="statsicon" src={require('./statsicon.png')} /><h2>Top Stats</h2>
             </Link>
             <Link ref={trackInfo} className="trackInfo" to="/trackInfo" onClick={() => focusTrackInfo()}>
-                <img src={require('./musicalnoteiconn.png')} /><h2>Track Info</h2>
+                <img alt="musicnoteicon" src={require('./musicalnoteiconn.png')} /><h2>Track Info</h2>
             </Link>
             <Link ref={recents} className="recents" to="/recents" onClick={() => focusRecents()}>
-                <img src={require('./rewindicon.png')} /><h2>Recents</h2>
+                <img alt="rewindicon" src={require('./reverseclockicon.png')} /><h2>Recents</h2>
             </Link>
         </div>
     )

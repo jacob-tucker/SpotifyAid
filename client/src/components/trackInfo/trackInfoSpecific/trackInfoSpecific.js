@@ -16,7 +16,7 @@ const TrackInfoSpecific = ({ location }) => {
             setAnalysis(trackStatistics.data)
         }
         getEverything()
-    }, [])
+    }, [location.state.track])
 
     useEffect(() => {
         console.log(trackInfo)
@@ -29,12 +29,12 @@ const TrackInfoSpecific = ({ location }) => {
                 ?
                 <div className="wholeTrackPage">
                     <div className="specificTrack">
-                        <img src={trackInfo.album.images[0].url} />
+                        <img alt="albumcover" src={trackInfo.album.images[0].url} />
                         <div className="specificTrackInfo">
                             <h4>{trackInfo.name}</h4>
                             <h5>{trackInfo.artists[0].name}</h5>
                             <h6>{trackInfo.album.release_date}</h6>
-                            <a target='_blank' href={trackInfo.external_urls.spotify}>OPEN ON SPOTIFY</a>
+                            <a target='_blank' rel="noopener noreferrer" href={trackInfo.external_urls.spotify}>OPEN ON SPOTIFY</a>
                         </div>
                     </div>
                     <div className="analysisChart">

@@ -8,8 +8,6 @@ const Profile = () => {
     const [followers, setFollowers] = useState('')
     const [playlists, setPlaylists] = useState([])
     const [following, setFollowing] = useState([])
-    const [profile, setProfile] = useState({})
-    const [test, setTest] = useState([1, 2, 3, 4])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -58,7 +56,7 @@ const Profile = () => {
                 <div className="playlists">
                     {playlists.map((thing, i) => (
                         <div key={i} className="playlistCover">
-                            <img src={thing.images[0].url} />
+                            <img alt="playlistcover" src={thing.images[0].url} />
                             <h4>{thing.name}</h4>
                             <p>By: {thing.owner.display_name}</p>
                             <p>{thing.tracks.total} TRACKS</p>

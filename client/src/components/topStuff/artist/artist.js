@@ -12,9 +12,9 @@ const Artist = ({ location }) => {
             {artist
                 ?
                 <div className="diver">
-                    <a target="_blank" href={artist.external_urls.spotify} className="artistCombinedPhotos">
-                        <img className="artistPicture" src={artist.images[0].url} />
-                        <img className="spotifySender" src={require('./playbutton.png')} />
+                    <a target="_blank" rel="noopener noreferrer" href={artist.external_urls.spotify} className="artistCombinedPhotos">
+                        <img alt="artist" className="artistPicture" src={artist.images[0].url} />
+                        <img alt="spotify" className="spotifySender" src={require('./playbutton.png')} />
                     </a>
 
                     <div className="artistInfo">
