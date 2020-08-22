@@ -1,3 +1,6 @@
+.navbar--hidden {
+    display: block;
+}
 .navbar{
     position: fixed;
     left: 0;
@@ -63,6 +66,9 @@
 }
 
 @media all and (max-width: 740px) {
+    .navbar--hidden {
+        display: none;
+    }
     .navbar {
         position: fixed;
         top: 90%;

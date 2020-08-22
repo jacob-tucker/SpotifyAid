@@ -16,43 +16,45 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.4))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   background-blend-mode: multiply,multiply;
 }
 
-.image-name {
+.profile .image-name {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.image-name .image {
+.profile .image-name .image {
   height: 200px;
   fill: white;
 }
 
-.image-name .name {
+.profile .image-name .name {
   color: white;
   font-family: 'Arial';
 }
 
-.image-name .name h1 {
+.profile .image-name .name h1 {
   font-size: 90px;
 }
 
-.image-name .name p {
+.profile .image-name .name p {
   color: #1ed760;
 }
 
-.logout {
-  position: relative;
-  margin-top: 25px;
+.profile .logout {
+  position: absolute;
+  bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +64,17 @@
   margin-left: 4%;
 }
 
-.logout a {
+.profile .logout .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .logout .info h3 {
+  margin: 0px 5px;
+}
+
+.profile .logout a {
   text-decoration: none;
   color: white;
   border-style: solid;
@@ -71,16 +83,6 @@
   margin-left: 1%;
   font-family: 'Arial';
   font-weight: bold;
-}
-
-.info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info h3 {
-  margin: 0px 5px;
 }
 
 .bottomHalf {
@@ -155,17 +157,24 @@
 }
 
 @media all and (max-width: 740px) {
-  .profile, .bottomHalf {
+  .profile {
     left: 0;
     width: 100vw;
   }
-  .logout {
+  .profile .logout {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
     margin-left: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bottomHalf {
+    left: 0;
+    width: 100vw;
   }
 }
 /*# sourceMappingURL=profile.css.map */

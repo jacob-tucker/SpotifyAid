@@ -1,20 +1,44 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import classnames from 'classnames'
 
 
 const Navbar = () => {
+    const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset)
+    const [visible, setVisible] = useState(true)
+
     const profileLink = useRef()
     const topStatsLink = useRef()
     const trackInfo = useRef()
     const recents = useRef()
+
+    // Hide or show the menu.
+    const handleScroll = useCallback(() => {
+        const currentScrollPos = window.pageYOffset;
+        const visibleTemp = prevScrollpos > currentScrollPos;
+
+        setPrevScrollpos(currentScrollPos)
+        setVisible(visibleTemp)
+    });
 
     useEffect(() => {
         if (window.location.pathname === '/topStuff') focusTopStats()
         else if (window.location.pathname === '/') focusProfile()
         else if (window.location.pathname === '/trackInfo') focusTrackInfo()
         else focusRecents()
-    }, [])
+
+        // Adds an event listener when the component is mount.
+        window.addEventListener("scroll", handleScroll);
+
+
+        // componentWillUnmount
+        return () => {
+            // Remove the event listener when the component is unmount.
+            window.removeEventListener("scroll", handleScroll);
+        }
+
+    }, [handleScroll])
 
     const focusProfile = () => {
         const myProfileReference = profileLink.current;
@@ -65,7 +89,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar">
+        <div className={classnames("navbar", {
+            "navbar--hidden": !visible
+        })}>
             <div className="title">
                 <img alt="spotifylogo" width='20px' height='20px' src={require('./spotifyimage.png')} />
                 <h2>SpotifyAid</h2>
