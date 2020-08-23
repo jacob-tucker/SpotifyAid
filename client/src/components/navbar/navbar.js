@@ -26,7 +26,7 @@ const Navbar = () => {
         if (window.location.pathname === '/topStuff') focusTopStats()
         else if (window.location.pathname === '/') focusProfile()
         else if (window.location.pathname === '/trackInfo') focusTrackInfo()
-        else focusRecents()
+        else if (window.location.pathname === '/recents') focusRecents()
 
         // Adds an event listener when the component is mount.
         window.addEventListener("scroll", handleScroll);
